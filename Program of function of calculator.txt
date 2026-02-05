@@ -1,0 +1,80 @@
+Program for making calculator using the Function operation
+
+Pseudocode:
+1) Mentioning the headerfiles on top of program.
+2) Declaring the function with three arguments.
+3) Initiating the main function
+4) Declaring the two variables
+5) Prompt the user to enter the two variables.
+6) Prompt the user to enter the operation you want to perform
+7) Calling the function 
+8) Defining the function using three arguments
+9) Using the switch statement for performing the operations
+10) Mentioning the void nature of function because it return no values.
+
+Code:
+ 
+#include<iostream>
+using namespace std;
+
+void calc(char a,int num_1,int num_2);            //Declaring the variable 
+
+int main()                                        //Initiating the main function
+{
+ char fun;
+ int a,b;
+ 
+ cout<<"Enter the First number=";
+ cin>>a;
+ cout<<endl;
+ cout<<"Enter the function you want to perform=";
+ cin>>fun;
+ cout<<"Enter the second number=";
+ cin>>b;
+ calc(fun,a,b);                          //Calling the function
+ return 0;
+}
+
+void calc(char a,int num_1,int num_2)
+{
+ switch(a)
+ {
+ case'+':
+   cout<<"Sum ="<<num_1+num_2;
+   break;
+ case'-':
+   cout<<"Difference="<<num_1-num_2;
+   break;
+ case'*':
+   cout<<"Product="<<num_1*num_2;
+   break;
+ case'/': 
+   cout<<"Division="<<num_1/num_2;
+   break;
+ }
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
